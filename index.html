@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Задание 5</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #f0f4ff, #e4f7ff);
+      color: #222;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 24px 28px;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      max-width: 520px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+    .hint {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 20px;
+      padding: 10px 12px;
+      border-radius: 8px;
+      background: #f5f7fb;
+      border: 1px solid #e1e5f2;
+    }
+
+    .output-label {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    .output {
+      min-height: 48px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      background: #0f172a;
+      color: #e5e7eb;
+      font-family: "JetBrains Mono", "Fira Code", monospace;
+      font-size: 15px;
+      border: 1px solid #1f2937;
+      display: flex;
+      align-items: center;
+      word-break: break-word;
+      white-space: pre-wrap;
+    }
+
+    .placeholder {
+      color: #6b7280;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ввод с клавиатуры</h1>
+    <div class="subtitle">
+      Буквы автоматически переводятся в верхний регистр, цифры игнорируются.
+    </div>
+    <div class="hint">
+      Нажимайте любые клавиши на клавиатуре. Попробуйте буквы и цифры.<br />
+      <strong>Backspace</strong> стирает последний символ, <strong>Enter</strong> добавляет перенос строки.
+    </div>
+    <div class="output-label">Результат:</div>
+    <div id="output" class="output">
+      <span class="placeholder">Начните печатать</span>
+    </div>
+  </div>
+
+  <script src="keyboard.js"></script>
+</body>
+</html>
